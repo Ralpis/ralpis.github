@@ -1,3 +1,13 @@
+
+
+## REACT 17
+
+리엑트 버전 간의 임베딩을 안전하게 이뤄지게 만들고, 다른 기술로 작성된 앱으로의 임베딩 또한 손쉽게 만든다.
+
+Document 레벨에 이벤트를 바인딩하지 않고, React트리가 렌더링되는 root DOM 컨테이너에 바인딩되도록 변경 
+
+
+
 ## Nest.js
 
 - express 기반으로 node.js에 백엔드를 구성할 수 있도록 도와준다
@@ -29,8 +39,35 @@ npm i -g @nestjs/cli
 ##### main.ts
 
 - 이름변경시 시작을 할 수 없다
-- Nest Application 인스턴스를 만드는 core 함수인 NestFactory를 사용하는 application의 entry file이다.
+- Nest Application [인스턴스를](https://d2.naver.com/helloworld/7804182) 만드는 core 함수인 NestFactory를 사용하는 application의 entry file이다.
 - NestFactory는 어플리케이션 인스턴스를 만들 수 있게 해주는 몇몇의 static method들을 노출시켜준다
 - create() 메서드는 INestApplication Interface를 수행하는 application object를 반환하며, 해당 오브젝트는 다양한 methods set을 제공한다.
-- 
+
+
+
+## SSR(Server-Side Rendering) 
+
+Node.js 기반의 아키텍처로 서버에서 사용자에게 보여줄 페이지를 모두 구성하여 사용자에게 페이지를 보여주는 방식이다. 즉, 모든 데이터가 매핑된 서비스 페이지를 클라이언트에게 보여줄 수 있으며 서버를 이용해서 페이지를 구성하기 때문에 CSR(Client-Side Rendering)보다 페이지를 구성하는 속도는 늦어지지만 전체적으로 사용자에게 보여주는 콘텐츠 구성이 완료되는 시점은 빨라진다는 장점이 있다. 더불어 SEO(Search Engine Optimization)을 구성하는 데 더욱 편리해진다. 
+
+
+
+##### SSR을 이용하면 좋은 이유
+
+- 고객에게 더욱 빠르게 제공할 수 있다. 
+- SEO를 구성을 유지하는 데 좋다
+- 프론트엔드 영역과 백엔드 영역을 분리할 수 있다
+- Javascript를 최대한 활용할 수 있다
+- 다른 여러 가지 대안을 활용할 수 있는 토대가 된다
+
+
+
+##### SSR의 단점
+
+- 초기 구축 비용이 무척이나 크다 
+
+
+
+> **SPA(single-page application)**
+>
+> 단일 페이지 애플리케이션으로, 현재의 페이지를 동적으로 작성함으로써 사용자와 소통하는 웹 애플리케이션이다. 연속되는 페이지 간의 사용자 경험을 향상시키고, 웹 애플리케이션이 데스크톱 애플리케이션처럼 동작하도록 도와준다. 
 
