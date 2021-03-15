@@ -29,7 +29,7 @@ Svelte
 ##### 자격증 공부할 것 
 
 - OCA 
-
+- DAsP
 - OCP
 - CISA
 - 네트워크 관리사 
